@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Ummah | Sabr & Silk Road</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --emerald: #004d40;
+            --gold: #c5a059;
+            --cream: #fcfaf5;
+            --dark: #1a1a1a;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cream);
+            color: var(--dark);
+        }
+
+        /* High-Fi Header */
+        header {
+            background: linear-gradient(rgba(0, 77, 64, 0.85), rgba(0, 77, 64, 0.85)), 
+                        url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            border-bottom: 8px solid var(--gold);
+        }
+
+        header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        /* Main Section */
+        .main-container {
+            max-width: 900px;
+            margin: -50px auto 50px;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .mission-text {
+            font-size: 1.15rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        /* Pillar Grid */
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .pillar-card {
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .pillar-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .pillar-card h3 {
+            color: var(--emerald);
+            margin-bottom: 10px;
+        }
+
+        /* Button Style */
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--emerald);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: 0.3s;
+            border: 2px solid transparent;
+            box-shadow: 0 10px 20px rgba(0, 77, 64, 0.2);
+        }
+
+        .cta-btn:hover {
+            background-color: white;
+            color: var(--emerald);
+            border: 2px solid var(--emerald);
+        }
+
+        footer {
+            background-color: var(--emerald);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .main-container { padding: 25px; margin-top: -30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sabr & Silk Road</h1>
+        <p>A Global Ummah Collective</p>
+    </header>
+
+    <div class="main-container">
+        <p class="mission-text">
+            A text & photo-only space for Muslims to connect globally. Explore Islamic history, share cultures, and support each other in Sabr and Tawakkul. Whether seeking Ramadan advice or cross-cultural friendship, we grow together for the sake of Allah. Let's build a bridge of friendship! 🌍🤝✨
+        </p>
+
+        <div class="pillars">
+            <div class="pillar-card">
+                <h3>📜 History</h3>
+                <p>Reviving the legacy of the Golden Age.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>🌍 Culture</h3>
+                <p>Sharing the beauty of the Global Ummah.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>🌙 Ramadan</h3>
+                <p>Growing together in the blessed month.</p>
+            </div>
+        </div>
+
+        <a href="YOUR_UMMAH_APP_LINK" class="cta-btn">Join Our Community</a>
+    </div>
+
+    <footer>
+        <p>Founded for the sake of Allah to unite the Global Ummah.</p>
+        <p class="footer-text">Built by turzo7x | &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

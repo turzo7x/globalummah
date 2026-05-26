@@ -159,11 +159,11 @@
                 <p>Growing together in the blessed month.</p>
             </div>
         </div>
-<!-- Join Our Community Button & Modern Modal Interface with Full Footer -->
-<section id="community-section" style="text-align: center; padding: 40px 20px 20px 20px; background: #fdfbf7; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+<!-- Join Our Community Button & Modern Modal Interface - Width and Alignment Fully Fixed -->
+<section id="community-section" style="text-align: center; padding: 20px 0px !important; margin: 0px !important; background: transparent !important; display: block !important; width: 100% !important; box-sizing: border-box !important;">
     
-    <!-- The Main Premium Button on Landing Page -->
-    <button onclick="openCommunityModal()" class="premium-join-btn">
+    <!-- The Main Premium Button -->
+    <button onclick="openCommunityModal()" style="background-color: #004d40 !important; color: white !important; border: none !important; padding: 16px 45px !important; font-size: 1.25rem !important; font-weight: bold !important; border-radius: 30px !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(0,77,64,0.3) !important; letter-spacing: 0.5px !important; display: inline-block !important; margin: 10px auto 30px auto !important; transition: background 0.2s ease, transform 0.2s ease !important;" onmouseover="this.style.backgroundColor='#00332c'; this.style.transform='translateY(-3px)'" onmouseout="this.style.backgroundColor='#004d40'; this.style.transform='translateY(0px)'">
         Join Our Community ✨
     </button>
 
@@ -203,37 +203,37 @@
                 <!-- Name -->
                 <div>
                     <label style="display: block; font-weight: 600; color: #004d40; margin-bottom: 6px; font-size: 0.95rem;">Full Name *</label>
-                    <input type="text" name="Name" required class="modal-input" placeholder="e.g., Muhammad">
+                    <input type="text" name="Name" required placeholder="e.g., Muhammad" style="width: 100%; padding: 11px 15px; border: 2px solid #e0e0e0; border-radius: 10px; box-sizing: border-box; font-size: 1rem; outline: none;">
                 </div>
 
                 <!-- Email -->
                 <div>
                     <label style="display: block; font-weight: 600; color: #004d40; margin-bottom: 6px; font-size: 0.95rem;">Email Address *</label>
-                    <input type="email" name="Email" required class="modal-input" placeholder="you@example.com">
+                    <input type="email" name="Email" required placeholder="you@example.com" style="width: 100%; padding: 11px 15px; border: 2px solid #e0e0e0; border-radius: 10px; box-sizing: border-box; font-size: 1rem; outline: none;">
                 </div>
 
                 <!-- WhatsApp Number -->
                 <div>
                     <label style="display: block; font-weight: 600; color: #004d40; margin-bottom: 6px; font-size: 0.95rem;">WhatsApp Number <span style="font-weight: normal; color: #888; font-size: 0.85rem;">(Optional)</span></label>
-                    <input type="tel" name="WhatsApp" class="modal-input" placeholder="+88017XXXXXXXX">
+                    <input type="tel" name="WhatsApp" placeholder="+88017XXXXXXXX" style="width: 100%; padding: 11px 15px; border: 2px solid #e0e0e0; border-radius: 10px; box-sizing: border-box; font-size: 1rem; outline: none;">
                 </div>
 
                 <!-- Country -->
                 <div>
                     <label style="display: block; font-weight: 600; color: #004d40; margin-bottom: 6px; font-size: 0.95rem;">Country *</label>
-                    <input type="text" name="Country" required class="modal-input" placeholder="e.g., Bangladesh">
+                    <input type="text" name="Country" required placeholder="e.g., Bangladesh" style="width: 100%; padding: 11px 15px; border: 2px solid #e0e0e0; border-radius: 10px; box-sizing: border-box; font-size: 1rem; outline: none;">
                 </div>
 
                 <!-- Birthday -->
                 <div>
                     <label style="display: block; font-weight: 600; color: #004d40; margin-bottom: 6px; font-size: 0.95rem;">Date of Birth *</label>
-                    <input type="date" name="Birthday" required class="modal-input">
+                    <input type="date" name="Birthday" required style="width: 100%; padding: 11px 15px; border: 2px solid #e0e0e0; border-radius: 10px; box-sizing: border-box; font-size: 1rem; outline: none;">
                 </div>
 
                 <!-- Status -->
                 <div>
                     <label style="display: block; font-weight: 600; color: #004d40; margin-bottom: 6px; font-size: 0.95rem;">Current Academic / Professional Status *</label>
-                    <select name="Occupation_Status" required class="modal-input" style="background: #fff; height: 45px;">
+                    <select name="Occupation_Status" required style="width: 100%; padding: 11px 15px; border: 2px solid #e0e0e0; border-radius: 10px; box-sizing: border-box; font-size: 1rem; outline: none; background: #fff; height: 45px;">
                         <option value="">Select your status</option>
                         <option value="School Student">School Student</option>
                         <option value="College Student">College Student</option>
@@ -246,7 +246,7 @@
                 <!-- Institution Name -->
                 <div>
                     <label style="display: block; font-weight: 600; color: #004d40; margin-bottom: 6px; font-size: 0.95rem;">School / College / University / Workplace Name *</label>
-                    <input type="text" name="Institution_or_Workplace" required class="modal-input" placeholder="e.g., Class 10, Dhaka College">
+                    <input type="text" name="Institution_or_Workplace" required placeholder="e.g., Class 10, Dhaka College" style="width: 100%; padding: 11px 15px; border: 2px solid #e0e0e0; border-radius: 10px; box-sizing: border-box; font-size: 1rem; outline: none;">
                 </div>
 
                 <!-- Marital Status -->
@@ -264,7 +264,7 @@
 
                 <!-- Submit Button -->
                 <div style="margin-top: 10px;">
-                    <button type="submit" class="modal-submit-btn">
+                    <button type="submit" style="width: 100%; background: #004d40; color: white; border: none; padding: 14px; font-size: 1.1rem; font-weight: bold; border-radius: 10px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,77,64,0.2); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#00332c'" onmouseout="this.style.backgroundColor='#004d40'">
                         Submit Application ✨
                     </button>
                 </div>
@@ -288,15 +288,21 @@
         </div>
     </div>
 
-    <!-- Mota Horizontal Line (Divider) -->
-    <hr style="border: 0; height: 4px; background: linear-gradient(to right, #004d40, #d4af37, #004d40); width: 85%; margin: 60px auto 20px auto; border-radius: 2px;">
+    <!-- Mota Horizontal Line (Divider - Full Width Checked) -->
+    <div style="border: 0 !important; height: 4px !important; background: linear-gradient(to right, #004d40, #d4af37, #004d40) !important; width: 100% !important; margin: 50px auto 25px auto !important; display: block !important;"></div>
 
-    <!-- Footer Content Section -->
-    <footer style="margin-top: 15px; font-size: 0.95rem; color: #555; line-height: 1.6;">
-        <p style="margin: 5px 0; font-weight: 600; color: #004d40;">Built by Turzo 7x</p>
-        <p style="margin: 5px 0; font-size: 0.85rem; color: #777;">Copyright &copy; 2026 Sabr & Silk Road. All Rights Reserved.</p>
-        <p style="margin: 8px 0; font-size: 0.85rem; font-style: italic; color: #d4af37; letter-spacing: 0.5px;">"Found for the Ummah, driven by purpose."</p>
-    </footer>
+    <!-- Footer Content Section (Full Fluid Width) -->
+    <div style="margin-top: 15px !important; text-align: center !important; display: block !important; width: 100% !important; clear: both !important; box-sizing: border-box !important;">
+        <span style="display: block !important; margin: 6px 0 !important; font-weight: bold !important; color: #004d40 !important; font-size: 1.25rem !important; font-family: 'Segoe UI', Arial, sans-serif !important;">
+            Built by Turzo 7x
+        </span>
+        <span style="display: block !important; margin: 6px 0 !important; font-size: 0.95rem !important; color: #666666 !important; font-family: 'Segoe UI', Arial, sans-serif !important;">
+            Copyright &copy; 2026 Sabr & Silk Road. All Rights Reserved.
+        </span>
+        <span style="display: block !important; margin: 12px 0 20px 0 !important; font-size: 1rem !important; font-style: italic !important; color: #d4af37 !important; font-family: 'Segoe UI', Arial, sans-serif !important; letter-spacing: 0.5px !important; font-weight: 500 !important;">
+            "Found for the Ummah, driven by purpose."
+        </span>
+    </div>
 
     <!-- JavaScript to Control Open/Close Interface -->
     <script>
@@ -320,64 +326,4 @@
             }
         }
     </script>
-
-    <!-- Styles for Input Pop, Hover Effects and Button Animation -->
-    <style>
-        .premium-join-btn {
-            background: #004d40; 
-            color: white; 
-            border: none; 
-            padding: 16px 40px; 
-            font-size: 1.25rem; 
-            font-weight: bold; 
-            border-radius: 30px; 
-            cursor: pointer; 
-            transition: all 0.3s ease-in-out; 
-            box-shadow: 0 4px 15px rgba(0,77,64,0.2); 
-            letter-spacing: 0.5px;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .premium-join-btn:hover {
-            background: #00332c;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,77,64,0.4);
-        }
-        .modal-input {
-            width: 100%; 
-            padding: 11px 15px; 
-            border: 2px solid #e0e0e0; 
-            border-radius: 10px; 
-            box-sizing: border-box; 
-            font-size: 1rem;
-            transition: all 0.25s ease-in-out;
-            outline: none;
-        }
-        .modal-input:focus {
-            border-color: #004d40;
-            box-shadow: 0 0 8px rgba(0, 77, 64, 0.15);
-            background-color: #fafdfc;
-        }
-        .modal-submit-btn {
-            width: 100%; 
-            background: #004d40; 
-            color: white; 
-            border: none; 
-            padding: 14px; 
-            font-size: 1.1rem; 
-            font-weight: bold; 
-            border-radius: 10px; 
-            cursor: pointer; 
-            transition: all 0.3s ease; 
-            box-shadow: 0 4px 15px rgba(0,77,64,0.2);
-        }
-        .modal-submit-btn:hover {
-            background: #00332c;
-            transform: translateY(-1px);
-        }
-        @keyframes slideDown {
-            from { transform: translateY(-30px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-    </style>
 </section>

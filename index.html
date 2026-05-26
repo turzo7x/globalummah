@@ -159,11 +159,11 @@
                 <p>Growing together in the blessed month.</p>
             </div>
         </div>
-<!-- Join Our Community Button & Modern Modal Interface -->
-<section id="community-section" style="text-align: center; padding: 40px 20px; background: #fdfbf7; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+<!-- Join Our Community Button & Modern Modal Interface with Full Footer -->
+<section id="community-section" style="text-align: center; padding: 40px 20px 20px 20px; background: #fdfbf7; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
     
-    <!-- The Main Button on Landing Page -->
-    <button onclick="openCommunityModal()" style="background: #004d40; color: white; border: none; padding: 16px 35px; font-size: 1.2rem; font-weight: bold; border-radius: 30px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,77,64,0.2); letter-spacing: 0.5px;">
+    <!-- The Main Premium Button on Landing Page -->
+    <button onclick="openCommunityModal()" class="premium-join-btn">
         Join Our Community ✨
     </button>
 
@@ -288,21 +288,30 @@
         </div>
     </div>
 
+    <!-- Mota Horizontal Line (Divider) -->
+    <hr style="border: 0; height: 4px; background: linear-gradient(to right, #004d40, #d4af37, #004d40); width: 85%; margin: 60px auto 20px auto; border-radius: 2px;">
+
+    <!-- Footer Content Section -->
+    <footer style="margin-top: 15px; font-size: 0.95rem; color: #555; line-height: 1.6;">
+        <p style="margin: 5px 0; font-weight: 600; color: #004d40;">Built by Turzo 7x</p>
+        <p style="margin: 5px 0; font-size: 0.85rem; color: #777;">Copyright &copy; 2026 Sabr & Silk Road. All Rights Reserved.</p>
+        <p style="margin: 8px 0; font-size: 0.85rem; font-style: italic; color: #d4af37; letter-spacing: 0.5px;">"Found for the Ummah, driven by purpose."</p>
+    </footer>
+
     <!-- JavaScript to Control Open/Close Interface -->
     <script>
         function openCommunityModal() {
             var modal = document.getElementById("communityModal");
             modal.style.display = "flex";
-            document.body.style.overflow = "hidden"; // Stops main page scrolling when modal is open
+            document.body.style.overflow = "hidden";
         }
 
         function closeCommunityModal() {
             var modal = document.getElementById("communityModal");
             modal.style.display = "none";
-            document.body.style.overflow = "auto"; // Enables main page scrolling again
+            document.body.style.overflow = "auto";
         }
 
-        // Close modal if user clicks outside the form box
         window.onclick = function(event) {
             var modal = document.getElementById("communityModal");
             if (event.target == modal) {
@@ -312,8 +321,28 @@
         }
     </script>
 
-    <!-- Styles for Input Pop & Button Effects -->
+    <!-- Styles for Input Pop, Hover Effects and Button Animation -->
     <style>
+        .premium-join-btn {
+            background: #004d40; 
+            color: white; 
+            border: none; 
+            padding: 16px 40px; 
+            font-size: 1.25rem; 
+            font-weight: bold; 
+            border-radius: 30px; 
+            cursor: pointer; 
+            transition: all 0.3s ease-in-out; 
+            box-shadow: 0 4px 15px rgba(0,77,64,0.2); 
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .premium-join-btn:hover {
+            background: #00332c;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,77,64,0.4);
+        }
         .modal-input {
             width: 100%; 
             padding: 11px 15px; 
@@ -351,13 +380,4 @@
             to { transform: translateY(0); opacity: 1; }
         }
     </style>
-<!-- Mota Horizontal Line (Divider) -->
-<hr style="border: 0; height: 4px; background: linear-gradient(to right, #004d40, #d4af37, #004d40); width: 80%; margin: 60px auto 20px auto; border-radius: 2px;">
-
-<!-- Footer Content Section -->
-<footer style="text-align: center; margin-top: 15px; font-family: 'Segoe UI', sans-serif; font-size: 0.9rem; color: #555; line-height: 1.6; padding-bottom: 20px;">
-    <p style="margin: 5px 0; font-weight: 600; color: #004d40;">Built by Turzo 7x</p>
-    <p style="margin: 5px 0; font-size: 0.85rem; color: #777;">Copyright &copy; 2026 Sabr & Silk Road. All Rights Reserved.</p>
-    <p style="margin: 8px 0; font-size: 0.8rem; font-style: italic; color: #d4af37; letter-spacing: 0.5px;">"Found for the Ummah, driven by purpose."</p>
-</footer>
 </section>

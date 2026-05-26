@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Section - Sabr & Silk Road</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #fdfbf7; font-family: 'Segoe UI', Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center;">
+
+    <!-- Back Button to Home -->
+    <a href="index.html" style="position: fixed; top: 20px; left: 20px; text-decoration: none; background: #004d40; color: #d4af37; padding: 10px 20px; border-radius: 20px; font-weight: bold; font-size: 0.95rem; box-shadow: 0 4px 12px rgba(0,77,64,0.2); z-index: 100;">⬅ Back Home</a>
+
+    <!-- Premium Header & Welcome Concept -->
+    <div style="text-align: center; margin: 60px 20px 30px 20px; max-width: 700px;">
+        <div style="font-size: 2.2rem; color: #004d40; font-family: 'Traditional Arabic', Georgia, serif; font-weight: bold; margin-bottom: 5px;">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+        <h1 style="color: #004d40; font-size: 2.3rem; font-weight: 800; margin: 10px 0;">Ask Our Global Ummah</h1>
+        <p style="color: #555; font-size: 1.05rem; line-height: 1.6; margin-top: 10px;">
+            Welcome to the secure Q&A platform. If you have any questions regarding faith, purpose, or guidance, feel free to drop them below anonymously or with your details.
+        </p>
+        <hr style="border: 0; height: 2px; background: linear-gradient(to right, transparent, #d4af37, transparent); margin-top: 25px; width: 80%;">
+    </div>
+
+    <!-- Main Interactive Form Box -->
+    <div style="background: #ffffff; max-width: 650px; width: 90%; padding: 40px 30px; border-radius: 25px; box-shadow: 0 12px 35px rgba(0,0,0,0.1); border: 2px solid #e0e0e0; border-top: 6px solid #004d40; border-bottom: 6px solid #d4af37; box-sizing: border-box; margin-bottom: 50px;">
+        
+        <!-- FormSubmit Setup (Sending to your email) -->
+        <form action="https://formsubmit.co/hasanmdnahid032@gmail.com" method="POST" enctype="multipart/form-data" style="display: flex; flex-direction: column; gap: 22px;">
+            
+            <!-- Redirect directly back to activate the greeting card popup -->
+            <input type="hidden" name="_next" value="https://turzo7x.github.io/globalummah/qa.html?submitted=true">
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Email Input (Required) -->
+            <div>
+                <label style="display: block; font-weight: 700; color: #004d40; margin-bottom: 8px; font-size: 0.95rem;">Your Email Address *</label>
+                <input type="email" name="User_Email" required placeholder="example@gmail.com" style="width: 100%; padding: 13px 15px; border: 2px solid #e0e0e0; border-radius: 12px; box-sizing: border-box; font-size: 1rem; outline: none; transition: 0.3s;" onfocus="this.style.borderColor='#004d40'">
+            </div>
+
+            <!-- Question Input (Required) -->
+            <div>
+                <label style="display: block; font-weight: 700; color: #004d40; margin-bottom: 8px; font-size: 0.95rem;">Your Question / Query *</label>
+                <textarea name="Question_Text" required placeholder="Write your question beautifully here..." rows="6" style="width: 100%; padding: 13px 15px; border: 2px solid #e0e0e0; border-radius: 12px; box-sizing: border-box; font-size: 1rem; outline: none; line-height: 1.5; resize: vertical;" onfocus="this.style.borderColor='#004d40'"></textarea>
+            </div>
+
+            <!-- File Upload Input (Text, Picture, Voice attachment supported) -->
+            <div>
+                <label style="display: block; font-weight: 700; color: #004d40; margin-bottom: 4px; font-size: 0.95rem;">Add Attachments</label>
+                <span style="display: block; color: #888; font-size: 0.8rem; margin-bottom: 8px;">(You can upload an image, audio voice record, or reference text file)</span>
+                <input type="file" name="Attachment" accept="image/*, audio/*, .txt, .pdf" style="width: 100%; padding: 10px; border: 2px dashed #d4af37; border-radius: 12px; background: #fffbf5; box-sizing: border-box; cursor: pointer;">
+            </div>
+
+            <!-- Submit Button -->
+            <div style="margin-top: 10px;">
+                <button type="submit" style="width: 100%; background: #004d40; color: white; border: none; padding: 15px; font-size: 1.1rem; font-weight: bold; border-radius: 12px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,77,64,0.25); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#00332c'; this.style.transform='translateY(-2px)'" onmouseout="this.style.backgroundColor='#004d40'; this.style.transform='translateY(0px)'">
+                    Submit Question 🚀
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Thank You / Islamic Hadith Greeting Pop-up Card -->
+    <div id="qaThanksModal" style="display: none; position: fixed; z-index: 99999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(8px); align-items: center; justify-content: center; padding: 20px; box-sizing: border-box;">
+        <div style="background: #ffffff; max-width: 520px; width: 100%; padding: 40px 25px; border-radius: 25px; border: 3px solid #d4af37; border-top: 8px solid #004d40; text-align: center; animation: popEffect 0.4s ease-out; box-shadow: 0 15px 45px rgba(212,175,55,0.3);">
+            
+            <div style="font-size: 3rem; animation: floatAnim 2s infinite ease-in-out;">✨🌙✨</div>
+            <h2 style="color: #004d40; font-size: 1.7rem; margin: 15px 0 5px 0; font-weight: 700;">JazakAllahu Khairan!</h2>
+            <p style="color: #444; font-size: 1rem; line-height: 1.6; font-weight: 500; margin-bottom: 20px;">
+                Thank you so much for reaching out with your question. We highly value your curiosity and faith.
+            </p>
+
+            <!-- Upodesh / Hadith Inside Thanks Card -->
+            <div style="background: #fffbf2; border-left: 5px solid #004d40; padding: 15px; border-radius: 8px; text-align: center; margin: 20px 0;">
+                <div style="font-size: 1.1rem; color: #004d40; font-family: 'Traditional Arabic', serif; font-weight: bold; margin-bottom: 6px;">
+                    "مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ"
+                </div>
+                <div style="font-size: 0.88rem; color: #555; font-style: italic; line-height: 1.4;">
+                    "Whoever takes a path upon which he seeks knowledge, Allah will make the path to Paradise easy for him."
+                </div>
+                <div style="font-size: 0.75rem; color: #999; margin-top: 6px; font-weight: bold;">— Jami` at-Tirmidhi (2646)</div>
+            </div>
+
+            <!-- Crucial Notice -->
+            <p style="background: #f0f7f4; color: #004d40; padding: 12px; border-radius: 10px; font-size: 0.9rem; font-weight: 600; line-height: 1.4; border: 1px solid #d0ebd8;">
+                📢 Within a few hours, you will receive the authentic answer to your question directly through your email address.
+            </p>
+
+            <button onclick="closeQaThanks()" style="background: #004d40; color: white; border: none; padding: 12px 35px; font-size: 1rem; font-weight: bold; border-radius: 25px; cursor: pointer; margin-top: 20px; transition: 0.2s;" onmouseover="this.style.backgroundColor='#00332c'">Close Window</button>
+        </div>
+    </div>
+
+    <style>
+        @keyframes popEffect { 0% { transform: scale(0.8); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+        @keyframes floatAnim { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+    </style>
+
+    <script>
+        function closeQaThanks() {
+            document.getElementById("qaThanksModal").style.display = "none";
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+        // Monitor if form submitted successfully via URL
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('submitted')) {
+                document.getElementById("qaThanksModal").style.display = "flex";
+            }
+        });
+    </script>
+</body>
+</html>

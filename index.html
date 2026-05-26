@@ -14,7 +14,37 @@
         }
 
         body {
-            margin: 0;
+            <!-- Premium 3-Line Hamburger Menu & Sidebar -->
+<div id="navHamburger" onclick="toggleSidebar()" style="position: fixed; top: 20px; left: 20px; z-index: 999999; background: #004d40; color: #d4af37; width: 45px; height: 45px; border-radius: 50px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,77,64,0.3); transition: all 0.3s ease;">
+    ☰
+</div>
+
+<div id="navSidebar" style="position: fixed; top: 0; left: -280px; width: 280px; height: 100%; background: #004d40; z-index: 999998; box-shadow: 5px 0 25px rgba(0,0,0,0.3); transition: all 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99); padding-top: 80px; box-sizing: border-box;">
+    <!-- Close Button inside Sidebar -->
+    <span onclick="toggleSidebar()" style="position: absolute; top: 20px; right: 25px; color: #d4af37; font-size: 1.8rem; cursor: pointer; font-weight: bold;">&times;</span>
+    
+    <!-- Navigation Links -->
+    <nav style="display: flex; flex-direction: column; gap: 15px; padding: 0 25px;">
+        <a href="index.html" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 600; padding: 12px 15px; border-radius: 8px; background: rgba(255,255,255,0.08); font-family: 'Segoe UI', sans-serif;">🏠 Home</a>
+        <a href="qa.html" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 600; padding: 12px 15px; border-radius: 8px; transition: 0.2s; font-family: 'Segoe UI', sans-serif;" onmouseover="this.style.background='rgba(212,175,55,0.15)'" onmouseout="this.style.background='transparent'">❓ Q&A Section</a>
+        <a href="about.html" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 600; padding: 12px 15px; border-radius: 8px; transition: 0.2s; font-family: 'Segoe UI', sans-serif;" onmouseover="this.style.background='rgba(212,175,55,0.15)'" onmouseout="this.style.background='transparent'">✨ About Us</a>
+    </nav>
+    
+    <!-- Branding Footer inside sidebar -->
+    <div style="position: absolute; bottom: 30px; left: 25px; color: #d4af37; font-size: 0.8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">Sabr & Silk Road</div>
+</div>
+
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("navSidebar");
+        if(sidebar.style.left === "0px") {
+            sidebar.style.left = "-280px";
+        } else {
+            sidebar.style.left = "0px";
+        }
+    }
+</script>
+        margin: 0;
             padding: 0;
             font-family: 'Poppins', sans-serif;
             background-color: var(--cream);
